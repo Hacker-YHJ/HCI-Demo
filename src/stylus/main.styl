@@ -1,2 +1,33 @@
 @import 'nib'
 global-reset()
+
+html, body
+  width: 100%
+  height: 100%
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif
+
+@import 'panel.styl'
+@import 'graph.styl'
+@import 'popout.styl'
+
+#title
+  position: absolute
+  width: calc(100% - 64px)
+  top: 5%
+  left: 64px
+  font-family: 'Helvetica Neue', Helvetica, sans-serif
+  font-size: 36px
+  letter-spacing: 1px
+  font-weight: lighter
+  text-align: center
+
+#subTitle
+  position: absolute
+  width: calc(100% - 64px)
+  top: 12%
+  left: 64px
+  font-family: 'Helvetica Neue', Helvetica, sans-serif
+  font-size: 16px
+  letter-spacing: 1px
+  font-weight: lighter
+  text-align: center

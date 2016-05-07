@@ -129,7 +129,7 @@ class Graph
       else
         @popout.addOnDismiss @resetLinks
         _.delayFunc 1000, =>
-          @popout.pop 'Oops!', 'Seems like you didn\'t build a tree, try again please :)'
+          @popout.pop 'Oops!', 'Seems like you didn\'t build a tree. Maybe you have some loops. Try again please :)'
 
   pivotMax: =>
     v = [0...7].map -> 0
